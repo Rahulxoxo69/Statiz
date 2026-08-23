@@ -1,0 +1,12 @@
+pymupdf
+pdfplumber
+rapidfuzz
+pandas
+openpyxl
+fastapi
+uvicorn[standard]
+sentence-transformers
+python-multipart
+reportlab
+httpx
+playwright

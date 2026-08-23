@@ -59,9 +59,9 @@ data/processed/catalog.json
 ## Quickstart
 
 ```bash
-cd D:\projects1\hackathon-industrial
-pip install pymupdf pdfplumber rapidfuzz pandas openpyxl fastapi "uvicorn[standard]" \
-            sentence-transformers python-multipart reportlab httpx
+git clone https://github.com/Rahulxoxo69/Statiz.git
+cd Statiz
+pip install -r requirements.txt
 
 # generate the demo dataset (or replace with your own files in data/raw/)
 python scripts/make_sample_data.py

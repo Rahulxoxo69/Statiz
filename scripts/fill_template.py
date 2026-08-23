@@ -1,13 +1,25 @@
-"""Fill the UniHack prototype template with our content."""
+"""Fill the UniHack prototype template with our content.
+
+Usage: python scripts/fill_template.py <path/to/template.pptx> [output.pptx]
+Template and output paths are arguments so this runs on any machine.
+"""
+import sys
+from pathlib import Path
+
 from pptx import Presentation
 from pptx.util import Pt, Emu
 from pptx.dml.color import RGBColor
+
+ROOT = Path(__file__).resolve().parents[1]
+TEMPLATE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "UniHack_Template.pptx"
+OUTPUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "demo" / "UniHack_Prototype.pptx"
+
+p = Presentation(str(TEMPLATE))
 
 BLUE = RGBColor(0x1D, 0x4E, 0xD8)
 DARK = RGBColor(0x0F, 0x17, 0x2A)
 GRAY = RGBColor(0x47, 0x55, 0x69)
 
-p = Presentation(r'D:\[EXT] UniHack-Protoype Template.pptx')
 SLIDES = list(p.slides)
 
 
@@ -112,13 +124,13 @@ add_text(SLIDES[5],
     Emu(1500000), size=13)
 
 # S7 flow diagram
-SLIDES[6].shapes.add_picture("demo/assets/flow.png", Emu(150000), Emu(1450000), height=Emu(3300000))
+SLIDES[6].shapes.add_picture(str(ROOT / "demo" / "assets" / "flow.png"), Emu(150000), Emu(1450000), height=Emu(3300000))
 
 # S8 wireframe = console
-SLIDES[7].shapes.add_picture("demo/assets/mvp_console.png", Emu(150000), Emu(1400000), height=Emu(3300000))
+SLIDES[7].shapes.add_picture(str(ROOT / "demo" / "assets" / "mvp_console.png"), Emu(150000), Emu(1400000), height=Emu(3300000))
 
 # S9 architecture
-SLIDES[8].shapes.add_picture("demo/assets/arch.png", Emu(150000), Emu(1500000), height=Emu(3200000))
+SLIDES[8].shapes.add_picture(str(ROOT / "demo" / "assets" / "arch.png"), Emu(150000), Emu(1500000), height=Emu(3200000))
 
 # S10 tech
 add_text(SLIDES[9],
@@ -139,8 +151,8 @@ add_text(SLIDES[10],
     Emu(1500000), size=14)
 
 # S12 snapshots (two images side by side)
-SLIDES[11].shapes.add_picture("demo/assets/mvp_console.png", Emu(120000), Emu(1400000), height=Emu(2100000))
-SLIDES[11].shapes.add_picture("demo/assets/mvp_api.png", Emu(4750000), Emu(1400000), height=Emu(2100000))
+SLIDES[11].shapes.add_picture(str(ROOT / "demo" / "assets" / "mvp_console.png"), Emu(120000), Emu(1400000), height=Emu(2100000))
+SLIDES[11].shapes.add_picture(str(ROOT / "demo" / "assets" / "mvp_api.png"), Emu(4750000), Emu(1400000), height=Emu(2100000))
 add_text(SLIDES[11], "Review console (left) \u00b7 substitute search API (right)",
          Emu(3700000), left=Emu(3600000), size=11, color=GRAY)
 
@@ -165,5 +177,6 @@ add_text(SLIDES[13],
 xml_slides = p.slides._sldIdLst
 xml_slides.remove(list(xml_slides)[0])
 
-p.save(r'D:\projects1\hackathon-industrial\demo\UniHack_Prototype.pptx')
-print("saved demo/UniHack_Prototype.pptx")
+OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+p.save(str(OUTPUT))
+print(f"saved {OUTPUT}")
