@@ -56,7 +56,7 @@ for sh in SLIDES[1].shapes:
 
 # S3 brief
 add_text(SLIDES[2],
-    "SpecSheet \u2192 Smart Catalog turns minimal product information (part number, brand, short "
+    "Statiz turns minimal product information (part number, brand, short "
     "description, manufacturer URL, reference PDFs) into rich, governed product intelligence.\n"
     "Given sparse inputs, the pipeline scrapes manufacturer pages and reference documents, extracts "
     "spec tables from PDFs, auto-classifies each product into UNSPSC taxonomy with a confidence "

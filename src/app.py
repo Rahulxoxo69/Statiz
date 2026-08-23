@@ -26,7 +26,7 @@ from pydantic import BaseModel
 from .crossref.matcher import find_substitutes
 from .pipeline import OUT, run
 
-app = FastAPI(title="SpecSheet → Smart Catalog", version="0.1.0")
+app = FastAPI(title="Statiz", version="0.1.0")
 
 STATIC = Path(__file__).parent / "review-ui" / "static"
 app.mount("/static", StaticFiles(directory=STATIC), name="static")

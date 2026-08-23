@@ -1,4 +1,4 @@
-# SpecSheet → Smart Catalog
+# Statiz
 
 **AI-powered product intelligence for industrial commerce** — a hackathon prototype that turns messy supplier data into a governed, classified, cross-referenced product catalog.
 

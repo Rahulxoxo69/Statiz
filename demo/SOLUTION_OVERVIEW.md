@@ -1,4 +1,4 @@
-# Solution Overview — SpecSheet → Smart Catalog
+# Solution Overview — Statiz
 
 **Problem.** Industrial/e-commerce distributors receive product data as messy supplier flat files (inconsistent headers, mixed units, comma decimals) and unstructured spec-sheet PDFs — and need it as a governed, classified, enriched catalog. No mainstream tool auto-classifies to industrial taxonomies (UNSPSC/eCl@ss/ETIM), almost none extract datasheet content, and everything serious costs $45–100K/yr with 6–12-month implementations. Rexel — on Akeneo's own customer page — admits suppliers "can't do ETIM."
 
