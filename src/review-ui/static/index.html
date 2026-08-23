@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SpecSheet → Smart Catalog</title>
+<style>
+:root { --blue:#1d4ed8; --bg:#f1f5f9; --card:#fff; --ok:#16a34a; --warn:#d97706; --bad:#dc2626; }
+* { box-sizing:border-box; }
+body { font-family:'Segoe UI',system-ui,sans-serif; margin:0; background:var(--bg); color:#1e293b; }
+header { background:var(--blue); color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; }
+header h1 { font-size:18px; margin:0; font-weight:600; }
+header button { background:#fff; color:var(--blue); border:none; padding:8px 14px; border-radius:6px; font-weight:600; cursor:pointer; }
+#stats { display:flex; gap:12px; padding:14px 24px; flex-wrap:wrap; }
+.stat { background:var(--card); border-radius:8px; padding:10px 16px; min-width:130px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+.stat b { display:block; font-size:20px; }
+.stat span { font-size:11px; color:#64748b; text-transform:uppercase; letter-spacing:.05em; }
+#toolbar { padding:0 24px 10px; display:flex; gap:8px; }
+#toolbar input, #toolbar select { padding:8px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; }
+main { padding:0 24px 24px; }
+table { width:100%; border-collapse:collapse; background:var(--card); border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.08); font-size:13px; }
+th { background:#e2e8f0; text-align:left; padding:8px 10px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#475569; }
+td { padding:8px 10px; border-top:1px solid #e2e8f0; vertical-align:top; }
+tr:hover td { background:#f8fafc; }
+.badge { display:inline-block; padding:2px 8px; border-radius:99px; font-size:11px; font-weight:600; }
+.conf-high { background:#dcfce7; color:var(--ok); } .conf-mid { background:#fef3c7; color:var(--warn); } .conf-low { background:#fee2e2; color:var(--bad); }
+.attr-kv { display:inline-block; background:#eff6ff; border-radius:4px; padding:1px 6px; margin:1px; font-size:11px; }
+.attr-kv.pdf { background:#fef9c3; } .attr-kv small { color:#64748b; }
+button.approve { background:var(--ok); color:#fff; border:none; border-radius:5px; padding:4px 10px; cursor:pointer; font-size:12px; }
+button.approve:disabled { background:#bbf7d0; }
+.muted { color:#94a3b8; font-size:11px; }
+#toast { position:fixed; bottom:18px; right:18px; background:#0f172a; color:#fff; padding:10px 16px; border-radius:8px; font-size:13px; display:none; }
+a { color:var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <h1>SpecSheet → Smart Catalog &nbsp;<span class="muted" style="color:#bfdbfe">industrial product intelligence — review console</span></h1>
+  <div>
+    <a href="/api/export?format=csv" style="color:#fff;margin-right:12px;font-size:13px">Export CSV</a>
+    <button onclick="rerun()">Re-run pipeline</button>
+  </div>
+</header>
+<div id="stats"></div>
+<div id="toolbar">
+  <input id="q" placeholder="Search part number / description…" oninput="render()" size="34">
+  <select id="family" onchange="render()"><option value="">All families</option></select>
+  <select id="conf" onchange="render()">
+    <option value="">Any confidence</option>
+    <option value="0.9">≥ 0.90</option><option value="0.7">≥ 0.70</option><option value="0.5">≥ 0.50</option>
+  </select>
+</div>
+<main>
+<table>
+<thead><tr><th>Part</th><th>Description</th><th>UNSPSC classification</th><th>Attributes</th><th>Price</th><th>Cross-refs</th><th>Review</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</main>
+<div id="toast"></div>
+<script>
+let data = null;
+async function load(){ data = await (await fetch('/api/catalog')).json(); fillStats(); fillFamilies(); render(); }
+function fillStats(){
+  const s = data.stats;
+  const items = [['products',s.products],['spec PDFs',s.pdfs],['PDF-enriched attrs',s.enriched_attributes],['cross-referenced',s.cross_referenced],['LLM providers',s.llm_providers.length? s.llm_providers.join(', '):'local embeddings'],['pipeline sec',s.elapsed_sec]];
+  document.getElementById('stats').innerHTML = items.map(([k,v])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join('');
+}
+function fillFamilies(){
+  const fams=[...new Set(data.products.map(p=>p.classification?.family).filter(Boolean))];
+  document.getElementById('family').innerHTML += fams.map(f=>`<option>${f}</option>`).join('');
+}
+function confBadge(c){ const cls=c>=.9?'conf-high':c>=.7?'conf-mid':'conf-low'; return `<span class="badge ${cls}">${(c*100).toFixed(0)}%</span>`; }
+function render(){
+  const q=document.getElementById('q').value.toLowerCase(), fam=document.getElementById('family').value, mc=parseFloat(document.getElementById('conf').value||0);
+  const rows=data.products.map((p,i)=>({p,i})).filter(({p})=>{
+    const c=p.classification||{};
+    if(fam && c.family!==fam) return false;
+    if((c.confidence||0)<mc) return false;
+    if(q && !(`${p.part_number} ${p.description}`.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  document.getElementById('rows').innerHTML = rows.map(({p,i})=>{
+    const c=p.classification||{};
+    const attrs=Object.entries(p.attributes||{}).map(([k,v])=>
+      `<span class="attr-kv ${v.source_header?.startsWith('PDF')?'pdf':''}">${k}: ${v.value}<small>${v.source_header}</small></span>`).join(' ');
+    return `<tr>
+      <td><b>${p.part_number||'—'}</b><div class="muted">${p.source_file}</div></td>
+      <td>${p.description}</td>
+      <td>${c.title||'?'}<div>${confBadge(c.confidence||0)} <span class="muted">${c.unpsc_code} · ${c.method||''}</span></div>
+        ${(p.review_flags?.missing_required||[]).length?`<div class="badge conf-low">missing: ${p.review_flags.missing_required.join(', ')}</div>`:''}</td>
+      <td>${attrs}</td>
+      <td>${p.price? p.price.value.toFixed(2)+' €':'—'}</td>
+      <td>${(p.crossrefs||[]).length? `<a href="/api/substitutes/${p.part_number}" target="_blank">${p.crossrefs.length} match${p.crossrefs.length>1?'es':''}</a>`:'—'}</td>
+      <td>${p.review?.decision==='approve'?'<button class="approve" disabled>Approved</button>':`<button class="approve" onclick="approve(${i})">Approve</button>`}</td>
+    </tr>`;}).join('') || '<tr><td colspan="7" class="muted">No matching products.</td></tr>';
+}
+async function approve(i){
+  await fetch(`/api/products/${i}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({decision:'approve'})});
+  toast(`Approved ${data.products[i].part_number}`); data.products[i].review={decision:'approve'}; render();
+}
+async function rerun(){ toast('Running pipeline…'); await fetch('/api/run',{method:'POST'}); await load(); toast('Pipeline complete'); }
+function toast(m){ const t=document.getElementById('toast'); t.textContent=m; t.style.display='block'; setTimeout(()=>t.style.display='none',2500); }
+load();
+</script>
+</body>
+</html>

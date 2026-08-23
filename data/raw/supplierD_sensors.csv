@@ -1,0 +1,31 @@
+StockCode,Name,spec1,spec2,List Price,MOQ
+SNS-SEN0000,Pt100 Temperature Probe 4-Wire Class A,6,±0.15°C,66.55,5
+SNS-SEN0001,Inductive Proximity Sensor M18 Npn,2,10-30 VDC,73.95,5
+SNS-SEN0002,Pt100 Temperature Probe 3-Wire Class A,3,±0.15°C,46.39,5
+SNS-SEN0003,Pt100 Temperature Probe 3-Wire Class A,6,±0.15°C,60.78,5
+SNS-SEN0004,Pressure Transducer 0-16Bar,16,4-20mA,135.72,5
+SNS-SEN0005,Inductive Proximity Sensor M8 Npn,4,10-30 VDC,218.3,10
+SNS-SEN0006,Pt100 Temperature Probe 3-Wire Class A,6,±0.15°C,98.73,1
+SNS-SEN0007,Pressure Transducer 0-16Bar,16,4-20mA,183.79,5
+SNS-SEN0008,Pt100 Temperature Probe 6-Wire Class A,6,±0.15°C,136.52,10
+SNS-SEN0009,Inductive Proximity Sensor M12 Pnp,4,10-30 VDC,111.37,1
+SNS-SEN0010,Pressure Transducer 0-16Bar,16,4-20mA,164.5,5
+SNS-SEN0011,Pt100 Temperature Probe 3-Wire Class A,4,±0.15°C,221.66,10
+SNS-SEN0012,Pt100 Temperature Probe 3-Wire Class A,4,±0.15°C,146.95,10
+SNS-SEN0013,Inductive Proximity Sensor M8 Npn,2,10-30 VDC,209.64,1
+SNS-SEN0014,Inductive Proximity Sensor M12 Npn,4,10-30 VDC,60.26,5
+SNS-SEN0015,Pressure Transducer 0-16Bar,16,4-20mA,75.44,5
+SNS-SEN0016,Pressure Transducer 0-10Bar,10,4-20mA,119.23,10
+SNS-SEN0017,Pt100 Temperature Probe 3-Wire Class A,4,±0.15°C,63.12,1
+SNS-SEN0018,Pt100 Temperature Probe 3-Wire Class A,3,±0.15°C,228.51,1
+SNS-SEN0019,Inductive Proximity Sensor M18 Pnp,2,10-30 VDC,40.78,10
+SNS-SEN0020,Inductive Proximity Sensor M18 Pnp,4,10-30 VDC,171.48,5
+SNS-SEN0021,Inductive Proximity Sensor M18 Pnp,2,10-30 VDC,231.96,1
+SNS-SEN0022,Pt100 Temperature Probe 3-Wire Class A,4,±0.15°C,143.28,5
+SNS-SEN0023,Pressure Transducer 0-25Bar,25,4-20mA,57.22,10
+SNS-SEN0024,Pt100 Temperature Probe 6-Wire Class A,3,±0.15°C,35.23,5
+SNS-SEN0025,Pt100 Temperature Probe 6-Wire Class A,3,±0.15°C,193.54,10
+SNS-SEN0026,Inductive Proximity Sensor M12 Npn,8,10-30 VDC,96.49,10
+SNS-SEN0027,Pt100 Temperature Probe 4-Wire Class A,3,±0.15°C,205.7,5
+SNS-SEN0028,Inductive Proximity Sensor M12 Npn,8,10-30 VDC,215.28,5
+SNS-SEN0029,Pt100 Temperature Probe 3-Wire Class A,4,±0.15°C,52.16,10

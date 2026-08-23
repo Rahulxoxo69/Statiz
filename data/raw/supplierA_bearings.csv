@@ -1,0 +1,41 @@
+PartNo,Description,Bore (mm),OD mm,C,Speed,SealType,Price EUR
+BRG-BEA0000,Deep groove ball bearing 6001-2RS,25,45,14.3,9000 rpm,contact seal,45.24
+BRG-BEA0001,Deep groove ball bearing 6308-2RS,62,77,7.4,9000 rpm,contact seal,17.03
+BRG-BEA0002,Deep groove ball bearing 6308-2RS,62,77,12.8,15000 rpm,contact seal,49.33
+BRG-BEA0003,Deep groove ball bearing 6002-2RS,52,67,14.4,9000 rpm,contact seal,9.72
+BRG-BEA0004,Deep groove ball bearing 6208-Z,62,77,29.5,15000 rpm,shield,34.03
+BRG-BEA0005,Deep groove ball bearing 6305-2RS,62,77,30.1,15000 rpm,contact seal,36.33
+BRG-BEA0006,Deep groove ball bearing 6205,30,45,34.6,9000 rpm,open,25.29
+BRG-BEA0007,Deep groove ball bearing 6002-Z,30,45,16.6,15000 rpm,shield,43.3
+BRG-BEA0008,Deep groove ball bearing 6205,30,50,27.3,9000 rpm,open,25.25
+BRG-BEA0009,Deep groove ball bearing 6001,62,72,26.0,9000 rpm,open,50.02
+BRG-BEA0010,Deep groove ball bearing 6305-Z,25,35,32.5,15000 rpm,shield,15.91
+BRG-BEA0011,Deep groove ball bearing 6001-Z,30,45,10.5,15000 rpm,shield,45.83
+BRG-BEA0012,Deep groove ball bearing 6308-Z,40,50,34.9,9000 rpm,shield,9.09
+BRG-BEA0013,Deep groove ball bearing 6205-2RS,30,50,18.5,9000 rpm,contact seal,25.37
+BRG-BEA0014,Deep groove ball bearing 6308-Z,62,72,25.9,9000 rpm,shield,47.04
+BRG-BEA0015,Deep groove ball bearing 6208-Z,30,45,6.6,15000 rpm,shield,58.43
+BRG-BEA0016,Deep groove ball bearing 6308-2RS,40,60,21.0,9000 rpm,contact seal,24.94
+BRG-BEA0017,Deep groove ball bearing 6002,25,45,15.7,9000 rpm,open,56.03
+BRG-BEA0018,Deep groove ball bearing 6002-Z,30,40,13.4,15000 rpm,shield,8.8
+BRG-BEA0019,Deep groove ball bearing 6205,30,40,25.3,15000 rpm,open,18.84
+BRG-BEA0020,Deep groove ball bearing 6305-2RS,62,82,26.2,15000 rpm,contact seal,26.34
+BRG-BEA0021,Deep groove ball bearing 6208-Z,62,77,9.9,9000 rpm,shield,22.93
+BRG-BEA0022,Deep groove ball bearing 6206,30,40,8.5,15000 rpm,open,16.82
+BRG-BEA0023,Deep groove ball bearing 6002-Z,25,45,13.3,15000 rpm,shield,16.0
+BRG-BEA0024,Deep groove ball bearing 6308,52,62,28.9,12000 rpm,open,9.28
+BRG-BEA0025,Deep groove ball bearing 6208-Z,52,67,31.1,9000 rpm,shield,7.39
+BRG-BEA0026,Deep groove ball bearing 6002-2RS,30,40,11.9,12000 rpm,contact seal,27.63
+BRG-BEA0027,Deep groove ball bearing 6206-2RS,52,72,9.3,15000 rpm,contact seal,58.26
+BRG-BEA0028,Deep groove ball bearing 6002-2RS,30,45,20.3,9000 rpm,contact seal,54.54
+BRG-BEA0029,Deep groove ball bearing 6205-Z,40,55,14.6,15000 rpm,shield,12.67
+BRG-BEA0030,Deep groove ball bearing 6205,62,72,27.8,9000 rpm,open,36.71
+BRG-BEA0031,Deep groove ball bearing 6002,30,40,33.9,9000 rpm,open,7.84
+BRG-BEA0032,Deep groove ball bearing 6002-2RS,52,62,33.3,15000 rpm,contact seal,36.42
+BRG-BEA0033,Deep groove ball bearing 6205-Z,62,82,21.4,12000 rpm,shield,41.5
+BRG-BEA0034,Deep groove ball bearing 6208-Z,30,50,24.9,12000 rpm,shield,56.03
+BRG-BEA0035,Deep groove ball bearing 6205-Z,62,82,34.9,9000 rpm,shield,32.33
+BRG-BEA0036,Deep groove ball bearing 6208-2RS,30,45,14.6,12000 rpm,contact seal,38.25
+BRG-BEA0037,Deep groove ball bearing 6001,25,45,29.8,12000 rpm,open,56.58
+BRG-BEA0038,Deep groove ball bearing 6205-2RS,62,72,14.3,15000 rpm,contact seal,44.19
+BRG-BEA0039,Deep groove ball bearing 6001-Z,62,77,13.7,9000 rpm,shield,39.52
