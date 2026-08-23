@@ -10,17 +10,24 @@ import csv
 from functools import lru_cache
 from pathlib import Path
 
-from sentence_transformers import SentenceTransformer, util
-
 from ..llm import chat_json
 
 _MODEL = None
+_ST_OK = True  # sentence-transformers availability (set False if import fails)
 
 
 def _model():
-    global _MODEL
+    """Lazy-load the embedding model; tolerate environments without it."""
+    global _MODEL, _ST_OK
+    if not _ST_OK:
+        return None
     if _MODEL is None:
-        _MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+        try:
+            from sentence_transformers import SentenceTransformer
+            _MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+        except Exception as e:
+            print(f"[classify] sentence-transformers unavailable: {e}")
+            _ST_OK = False
     return _MODEL
 
 
@@ -34,11 +41,15 @@ def load_taxonomy(path: str) -> tuple[list[dict], "torch.Tensor"]:
 
 
 def classify(product: dict, taxonomy_path: Path, top_k: int = 5) -> dict | None:
+    model = _model()
+    if model is None:
+        return None  # embedding backend unavailable; pipeline handles None
     classes, tax_emb = load_taxonomy(str(taxonomy_path))
     text = _product_text(product)
     if not text.strip():
         return None
-    q = _model().encode(text, convert_to_tensor=True, normalize_embeddings=True)
+    from sentence_transformers import util
+    q = model.encode(text, convert_to_tensor=True, normalize_embeddings=True)
     scores = util.cos_sim(q, tax_emb)[0]
     top = scores.argsort(descending=True)[:top_k]
     candidates = []
