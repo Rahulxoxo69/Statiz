@@ -20,6 +20,7 @@ from pathlib import Path
 from rapidfuzz import fuzz, process
 
 from .enrich.delivery_mapper import map_evidence
+from .enrich.desc_parser import parse_product
 from .ingest.scraper import gather_evidence
 from .output.delivery import write_output, write_output_xlsx
 
@@ -32,6 +33,12 @@ INPUT_SYNONYMS = {
     "sku": ["sku - my_part_number", "sku", "my_part_number", "sku - my part number"],
     "mfg_part_num": ["mfg_part_num", "mfg part num", "mfg_part_number",
                      "manufacturer part number", "mpn"],
+    "part_desc": ["part_desc", "part desc", "description", "short description",
+                  "short_desc"],
+    "part_manuf": ["part_manuf", "part manufacturer", "manufacturer"],
+    "e1_brand": ["e1_brand", "e1 brand"],
+    "unilog_brand": ["unilog_brand", "unilog brand"],
+    "dib_brand": ["dib_brand", "dib brand"],
     "dept": ["dept", "department"], "klass": ["class"], "fine": ["fine"],
 }
 
@@ -89,8 +96,17 @@ def solve(input_csv: Path, output: Path) -> None:
                  "mfg_part_num": first("mfg_part_num"),
                  "dept": first("dept"), "klass": first("klass"), "fine": first("fine")}
         if not mfr_url:
-            print(f"[row {i}] no URL column value — passing through known fields only")
-            records.append({**known, "ref_urls": ref_urls})
+            # description-driven enrichment (no URL available)
+            rec = parse_product(first("mfg_part_num"), first("part_desc"),
+                                first("part_manuf"))
+            rec.update({k: v for k, v in known.items() if v and not rec.get(k)})
+            e1 = first("e1_brand")
+            rec["e1_brand"] = e1 if e1 and not e1.startswith("--") else None
+            records.append(rec)
+            n_attrs = len(rec.get("attributes", []))
+            if i <= 3 or n_attrs:
+                print(f"[row {i}] desc-enriched: brand={rec.get('brand_name')} "
+                      f"type={rec.get('product_name')} attrs={n_attrs}")
             continue
         print(f"[row {i}] gathering evidence: {mfr_url[:70]} "
               f"(+{len(ref_urls)} refs)")
