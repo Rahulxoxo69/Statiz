@@ -2,6 +2,12 @@
 
 **AI-powered product intelligence for industrial commerce** — a hackathon prototype that turns messy supplier data into a governed, classified, cross-referenced product catalog.
 
+## Demo
+
+![Statiz demo](demo/demo.gif)
+
+*Full video with playback controls: [demo_video.mp4](demo/demo_video.mp4) · Live prototype: [statiz.onrender.com](https://statiz.onrender.com)*
+
 Drop in messy supplier flat files (CSV/XLSX with inconsistent headers, mixed units, comma decimals) and spec-sheet PDFs. Get back a UNSPSC-classified, attribute-enriched, cross-referenced catalog — with every AI decision carrying a confidence score and every enriched attribute carrying its source, reviewed by a human before export.
 
 ## Why this exists (the gap)
