@@ -1,0 +1,629 @@
+[input ] 1000 rows; detected columns: {'mfg_part_num': ['Mfg_Part_Num'], 'part_desc': ['Part_Desc'], 'e1_brand': ['E1_Brand'], 'unilog_brand': ['Unilog_Brand'], 'dib_brand': ['DIB_Brand'], 'part_manuf': ['Part_Manuf']}
+[row 1] desc-enriched: brand=Diablo type=Sanding Belt attrs=3
+[row 2] desc-enriched: brand=3M type=Sanding Disc attrs=1
+[row 3] desc-enriched: brand=3M type=Sanding Disc attrs=1
+[row 5] desc-enriched: brand=3M type=Sanding Disc attrs=1
+[row 6] desc-enriched: brand=3M type=Sanding Disc attrs=1
+[row 7] desc-enriched: brand=3M type=Sanding Disc attrs=1
+[row 9] desc-enriched: brand= type=Sanding Sheet attrs=1
+[row 10] desc-enriched: brand= type=Sanding Sheet attrs=2
+[row 11] desc-enriched: brand= type=Sanding Sheet attrs=2
+[row 14] desc-enriched: brand=Diablo type=Cut-Off Disc attrs=1
+[row 15] desc-enriched: brand=Diablo type=Cut-Off Disc attrs=2
+[row 16] desc-enriched: brand=Diablo type=Cut-Off Disc attrs=1
+[row 17] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 18] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 19] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 20] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 21] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 22] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 23] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 24] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 25] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 26] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 27] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 28] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 29] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 30] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 31] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 32] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 33] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 34] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 35] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 36] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 37] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 38] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 39] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 40] desc-enriched: brand=Milwaukee type=Cut and Grind Disc attrs=1
+[row 41] desc-enriched: brand=Milwaukee type=Cut and Grind Disc attrs=1
+[row 42] desc-enriched: brand=Milwaukee type=Cut and Grind Disc attrs=1
+[row 43] desc-enriched: brand=Milwaukee type=Cut and Grind Disc attrs=1
+[row 44] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 45] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 46] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 47] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 48] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=1
+[row 49] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 50] desc-enriched: brand=Milwaukee type=Cut-Off Disc attrs=2
+[row 51] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 52] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 53] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 54] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 55] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 56] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 57] desc-enriched: brand=Milwaukee type=Grinding Disc attrs=1
+[row 58] desc-enriched: brand=Diablo type=Sanding Sponge attrs=1
+[row 59] desc-enriched: brand= type=Electrical Tape attrs=1
+[row 60] desc-enriched: brand= type=Tape attrs=1
+[row 61] desc-enriched: brand= type=Washer attrs=1
+[row 62] desc-enriched: brand= type=Washer attrs=1
+[row 63] desc-enriched: brand= type=Washer attrs=1
+[row 64] desc-enriched: brand= type=Washer attrs=1
+[row 65] desc-enriched: brand= type=Washer attrs=1
+[row 66] desc-enriched: brand= type=Washer attrs=1
+[row 68] desc-enriched: brand= type=Washer attrs=1
+[row 96] desc-enriched: brand= type=Mortar attrs=1
+[row 105] desc-enriched: brand= type=Deck Railing attrs=1
+[row 106] desc-enriched: brand= type=Deck Railing attrs=1
+[row 107] desc-enriched: brand= type=Deck Railing attrs=1
+[row 108] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=1
+[row 109] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=1
+[row 111] desc-enriched: brand= type=Deck Railing attrs=1
+[row 112] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 113] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 114] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 115] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 116] desc-enriched: brand= type=Lumber attrs=2
+[row 117] desc-enriched: brand= type=Lumber attrs=2
+[row 118] desc-enriched: brand= type=Lumber attrs=2
+[row 119] desc-enriched: brand= type=Lumber attrs=2
+[row 120] desc-enriched: brand= type=Lumber attrs=2
+[row 121] desc-enriched: brand= type=Lumber attrs=2
+[row 122] desc-enriched: brand= type=Lumber attrs=2
+[row 123] desc-enriched: brand= type=Lumber attrs=2
+[row 124] desc-enriched: brand= type=Lumber attrs=2
+[row 125] desc-enriched: brand= type=Lumber attrs=2
+[row 126] desc-enriched: brand= type=Lumber attrs=2
+[row 127] desc-enriched: brand= type=Lumber attrs=2
+[row 128] desc-enriched: brand= type=Lumber attrs=2
+[row 129] desc-enriched: brand= type=Lumber attrs=2
+[row 130] desc-enriched: brand= type=Lumber attrs=2
+[row 131] desc-enriched: brand= type=Lumber attrs=2
+[row 132] desc-enriched: brand= type=Lumber attrs=2
+[row 133] desc-enriched: brand= type=Lumber attrs=2
+[row 134] desc-enriched: brand= type=Lumber attrs=2
+[row 135] desc-enriched: brand= type=Lumber attrs=2
+[row 136] desc-enriched: brand= type=Lumber attrs=2
+[row 137] desc-enriched: brand= type=Lumber attrs=2
+[row 138] desc-enriched: brand= type=Deck Railing attrs=2
+[row 139] desc-enriched: brand= type=Deck Railing attrs=2
+[row 140] desc-enriched: brand= type=Lumber attrs=3
+[row 141] desc-enriched: brand= type=Lumber attrs=3
+[row 142] desc-enriched: brand= type=Lumber attrs=2
+[row 143] desc-enriched: brand= type=Lumber attrs=2
+[row 144] desc-enriched: brand= type=Lumber attrs=2
+[row 145] desc-enriched: brand= type=Deck Railing attrs=2
+[row 146] desc-enriched: brand= type=Deck Railing attrs=2
+[row 147] desc-enriched: brand= type=Deck Railing attrs=2
+[row 148] desc-enriched: brand= type=Lumber attrs=3
+[row 149] desc-enriched: brand= type=Lumber attrs=3
+[row 150] desc-enriched: brand= type=Lumber attrs=3
+[row 151] desc-enriched: brand= type=Lumber attrs=2
+[row 152] desc-enriched: brand= type=Lumber attrs=2
+[row 153] desc-enriched: brand= type=Lumber attrs=3
+[row 154] desc-enriched: brand= type=Lumber attrs=3
+[row 155] desc-enriched: brand= type=Lumber attrs=2
+[row 156] desc-enriched: brand= type=Lumber attrs=2
+[row 157] desc-enriched: brand= type=Lumber attrs=2
+[row 158] desc-enriched: brand= type=Lumber attrs=3
+[row 159] desc-enriched: brand= type=Lumber attrs=3
+[row 160] desc-enriched: brand= type=Lumber attrs=3
+[row 161] desc-enriched: brand= type=Lumber attrs=1
+[row 162] desc-enriched: brand= type=Lumber attrs=1
+[row 163] desc-enriched: brand= type=Lumber attrs=1
+[row 164] desc-enriched: brand= type=Lumber attrs=1
+[row 165] desc-enriched: brand= type=Lumber attrs=1
+[row 166] desc-enriched: brand= type=Lumber attrs=1
+[row 167] desc-enriched: brand= type=Lumber attrs=1
+[row 168] desc-enriched: brand= type=Lumber attrs=1
+[row 169] desc-enriched: brand= type=Lumber attrs=1
+[row 170] desc-enriched: brand= type=Lumber attrs=1
+[row 171] desc-enriched: brand= type=Lumber attrs=1
+[row 172] desc-enriched: brand= type=Lumber attrs=1
+[row 173] desc-enriched: brand= type=Lumber attrs=1
+[row 174] desc-enriched: brand= type=Lumber attrs=1
+[row 175] desc-enriched: brand= type=Lumber attrs=1
+[row 176] desc-enriched: brand= type=Lumber attrs=1
+[row 177] desc-enriched: brand= type=Lumber attrs=1
+[row 178] desc-enriched: brand= type=Lumber attrs=1
+[row 179] desc-enriched: brand= type=Lumber attrs=1
+[row 180] desc-enriched: brand= type=Lumber attrs=1
+[row 181] desc-enriched: brand= type=Lumber attrs=1
+[row 182] desc-enriched: brand= type=Lumber attrs=1
+[row 183] desc-enriched: brand= type=Lumber attrs=1
+[row 184] desc-enriched: brand= type=Lumber attrs=1
+[row 185] desc-enriched: brand= type=Lumber attrs=1
+[row 186] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 187] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 188] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 189] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 190] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 191] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 192] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 193] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 194] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 195] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 196] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 197] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 198] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 199] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 200] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 201] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 202] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 203] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 204] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 205] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 206] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 207] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 208] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 209] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 210] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 211] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 212] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 213] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 214] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 215] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 216] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 217] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 218] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 219] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 220] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 221] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 222] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 223] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 224] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 225] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 226] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 227] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 228] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 229] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 230] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 231] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 232] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 233] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 234] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 235] desc-enriched: brand=Boise Cascade type=Lumber attrs=1
+[row 236] desc-enriched: brand= type=Lumber attrs=2
+[row 237] desc-enriched: brand= type=Lumber attrs=2
+[row 238] desc-enriched: brand= type=Lumber attrs=2
+[row 239] desc-enriched: brand= type=Lumber attrs=2
+[row 240] desc-enriched: brand= type=Deck Railing attrs=2
+[row 241] desc-enriched: brand= type=Lumber attrs=3
+[row 242] desc-enriched: brand= type=Lumber attrs=2
+[row 243] desc-enriched: brand= type=Lumber attrs=3
+[row 244] desc-enriched: brand= type=Lumber attrs=2
+[row 245] desc-enriched: brand= type=Lumber attrs=3
+[row 246] desc-enriched: brand= type=1x8-12' Biscayne Trex attrs=2
+[row 247] desc-enriched: brand= type=1x8-12' Carmel Trex attrs=2
+[row 248] desc-enriched: brand= type=1x8-12' Jasper Trex attrs=2
+[row 249] desc-enriched: brand= type=1x12-12' Biscayne Trex attrs=2
+[row 250] desc-enriched: brand= type=1x12-12' Carmel Trex attrs=2
+[row 251] desc-enriched: brand= type=1x12-12' Jasper Trex attrs=2
+[row 252] desc-enriched: brand=Boise Cascade type=1x12-12' Hatteras Trex attrs=2
+[row 253] desc-enriched: brand=Boise Cascade type=1x12-12' Salt Flat attrs=2
+[row 254] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 255] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 256] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 257] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 258] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 259] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 260] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 261] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 262] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 263] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 264] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 265] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 266] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 267] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 268] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 269] desc-enriched: brand=Boise Cascade type=Lumber attrs=2
+[row 270] desc-enriched: brand= type=1x8-12' Island Mist attrs=2
+[row 271] desc-enriched: brand= type=1x8-12' Rainier Trex attrs=2
+[row 272] desc-enriched: brand= type=1x12-12' Island Mist attrs=2
+[row 273] desc-enriched: brand= type=1x12-12' Rainier Trex attrs=2
+[row 274] desc-enriched: brand=Boise Cascade type=1x8-12' Hatteras Trex attrs=2
+[row 275] desc-enriched: brand=Boise Cascade type=1x8-12' Salt Flat attrs=2
+[row 276] desc-enriched: brand= type=Lumber attrs=1
+[row 277] desc-enriched: brand= type=Lumber attrs=2
+[row 278] desc-enriched: brand= type=Lumber attrs=1
+[row 279] desc-enriched: brand= type=Lumber attrs=2
+[row 280] desc-enriched: brand= type=4x4 Wh Flat attrs=1
+[row 281] desc-enriched: brand= type=Wh 4x4-39 Blank attrs=1
+[row 282] desc-enriched: brand= type=Wh 6x6-108 Post attrs=1
+[row 283] desc-enriched: brand= type=Wh 4x4-108 Post attrs=1
+[row 284] desc-enriched: brand= type=Clay 4x4-108 Post attrs=1
+[row 285] desc-enriched: brand= type=Clay 6x6-108 Post attrs=1
+[row 286] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 287] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=2
+[row 288] desc-enriched: brand= type=6x6-10' Black Alum attrs=3
+[row 293] desc-enriched: brand= type=Deck Railing attrs=1
+[row 294] desc-enriched: brand= type=Deck Railing attrs=1
+[row 295] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=1
+[row 296] desc-enriched: brand=Boise Cascade type=Deck Railing attrs=1
+[row 297] desc-enriched: brand= type=Patriot x4 x37 attrs=2
+[row 298] desc-enriched: brand= type=Tape attrs=1
+[row 299] desc-enriched: brand= type=Door attrs=1
+[row 302] desc-enriched: brand= type=6068L Gliding Patio attrs=1
+[row 303] desc-enriched: brand= type=6068R Gliding Patio attrs=1
+[row 304] desc-enriched: brand= type=FS C01 Velux attrs=2
+[row 305] desc-enriched: brand= type=FS C04 Velux attrs=2
+[row 306] desc-enriched: brand= type=FS C06 Velux attrs=2
+[row 307] desc-enriched: brand= type=5x14 Bsmt ecoLitePlus attrs=1
+[row 308] desc-enriched: brand= type=5x22 Bsmt ecoLitePlus attrs=1
+[row 309] desc-enriched: brand= type=Slider United Black attrs=2
+[row 310] desc-enriched: brand= type=Drywall attrs=1
+[row 311] desc-enriched: brand= type=Lumber attrs=1
+[row 315] desc-enriched: brand= type=Lumber attrs=2
+[row 316] desc-enriched: brand= type=Lumber attrs=2
+[row 317] desc-enriched: brand= type=Lumber attrs=1
+[row 318] desc-enriched: brand= type=Lumber attrs=2
+[row 319] desc-enriched: brand= type=Lumber attrs=2
+[row 320] desc-enriched: brand= type=8' Premier Rib attrs=1
+[row 321] desc-enriched: brand= type=10' Premier Rib attrs=1
+[row 322] desc-enriched: brand= type=12' Premier Rib attrs=1
+[row 326] desc-enriched: brand= type=8' Premier Rib attrs=1
+[row 327] desc-enriched: brand= type=10' Premier Rib attrs=1
+[row 328] desc-enriched: brand= type=OC Duration TruDef attrs=1
+[row 331] desc-enriched: brand=Boise Cascade type=x12' Hardie Sdg attrs=1
+[row 333] desc-enriched: brand= type=x16' Smart Lap attrs=1
+[row 334] desc-enriched: brand= type=x16' Smart Pan attrs=1
+[row 335] desc-enriched: brand= type=Lumber attrs=1
+[row 336] desc-enriched: brand= type=x16' Smart Vented attrs=1
+[row 337] desc-enriched: brand=Boise Cascade type=Black Alum ADA attrs=1
+[row 338] desc-enriched: brand=Boise Cascade type=Black Alum ADA attrs=1
+[row 339] desc-enriched: brand=Boise Cascade type=8' Black Alum attrs=1
+[row 340] desc-enriched: brand= type=4x8 Huber Zip attrs=1
+[row 341] desc-enriched: brand= type=4x8 Huber Zip attrs=1
+[row 342] desc-enriched: brand= type=4x8 Huber Zip attrs=1
+[row 343] desc-enriched: brand= type=2x2 Black Fine attrs=2
+[row 349] desc-enriched: brand= type=4x4 2G GFI attrs=1
+[row 350] desc-enriched: brand= type=4x4 1G PVC attrs=1
+[row 351] desc-enriched: brand= type=4x4 2G GFCI attrs=1
+[row 352] desc-enriched: brand= type=4x4 1G Box attrs=1
+[row 353] desc-enriched: brand= type=4x4 1G Box attrs=1
+[row 354] desc-enriched: brand= type=4x4 1G Box attrs=1
+[row 360] desc-enriched: brand= type=4-1/2x4-1/2x2 2G Box attrs=1
+[row 365] desc-enriched: brand= type=TNOCD002 125V Outdooor attrs=1
+[row 366] desc-enriched: brand= type=TNDHD002 125V 7Day attrs=1
+[row 367] desc-enriched: brand= type=Door attrs=1
+[row 368] desc-enriched: brand= type=TNIW24 125V 24hr attrs=1
+[row 373] desc-enriched: brand=Kichler type=37418A Kichler Bath attrs=1
+[row 374] desc-enriched: brand=Kichler type=37423A Kichler Bath attrs=1
+[row 393] desc-enriched: brand=Kichler type=Light Fixture attrs=1
+[row 394] desc-enriched: brand=Kichler type=Light Fixture attrs=1
+[row 395] desc-enriched: brand= type=Light Fixture attrs=1
+[row 415] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 432] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 433] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 444] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 452] desc-enriched: brand=Philips type=15W Flor T12 attrs=1
+[row 453] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 454] desc-enriched: brand=Philips type=22W Flor T9 attrs=1
+[row 455] desc-enriched: brand=SATCO type=S3539 20W Halogen attrs=1
+[row 456] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 457] desc-enriched: brand=Philips type=150W Sodium Med attrs=1
+[row 458] desc-enriched: brand=SATCO type=S3709 25W Incan attrs=1
+[row 459] desc-enriched: brand=SATCO type=S4720 25W Incan attrs=1
+[row 460] desc-enriched: brand=SATCO type=S3720 40w Inc attrs=1
+[row 461] desc-enriched: brand=SATCO type=S3702 40W Incan attrs=1
+[row 462] desc-enriched: brand=SATCO type=S3703 40W Incan attrs=1
+[row 463] desc-enriched: brand=SATCO type=S3797 4W Incan attrs=1
+[row 464] desc-enriched: brand=SATCO type=S4724 4W Incan attrs=1
+[row 465] desc-enriched: brand=SATCO type=S4717 6W Incan attrs=1
+[row 466] desc-enriched: brand=SATCO type=S3794 7W Incan attrs=1
+[row 467] desc-enriched: brand=SATCO type=S3795 7W Incan attrs=1
+[row 468] desc-enriched: brand=SATCO type=S4726 7W Incan attrs=1
+[row 469] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 470] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 471] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 472] desc-enriched: brand=SATCO type=LED Lamp attrs=1
+[row 473] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 474] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 477] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 478] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 480] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 481] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 482] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 484] desc-enriched: brand=Philips type=75W Adj Base attrs=1
+[row 485] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 486] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 487] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 489] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 490] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 491] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 492] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 493] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 494] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 495] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 496] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 497] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 498] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 499] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 500] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 501] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 502] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 503] desc-enriched: brand= type=LED Lamp attrs=1
+[row 504] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 505] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 506] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 507] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 508] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 509] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 510] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 511] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 512] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 513] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 514] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 515] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 516] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 517] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 518] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 519] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 520] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 521] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 522] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 523] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 524] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 525] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 526] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 527] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 528] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 529] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 530] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 531] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 532] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 533] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 534] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 535] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 536] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 537] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 538] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 539] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 540] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 541] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 542] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 543] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 544] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 545] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 546] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 547] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 548] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 549] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 550] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 551] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 552] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 553] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 554] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 555] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 556] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 557] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 558] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 559] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 560] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 561] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 562] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 563] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 564] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 565] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 566] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 567] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 568] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 569] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 570] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 571] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 572] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 573] desc-enriched: brand=Philips type=75W Adj Base attrs=1
+[row 575] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 576] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 577] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 578] desc-enriched: brand=Philips type=LED Lamp attrs=1
+[row 590] desc-enriched: brand= type=HOM2040M200PRB 200A Load attrs=1
+[row 592] desc-enriched: brand= type=QO612L100RBCP 100A Load attrs=1
+[row 593] desc-enriched: brand= type=Cable/Wire attrs=1
+[row 599] desc-enriched: brand= type=Cable/Wire attrs=1
+[row 600] desc-enriched: brand= type=Cable/Wire attrs=1
+[row 602] desc-enriched: brand= type=Receptacle attrs=1
+[row 603] desc-enriched: brand= type=PBUC013 15A Wall attrs=1
+[row 604] desc-enriched: brand= type=Receptacle attrs=1
+[row 605] desc-enriched: brand= type=Receptacle attrs=1
+[row 606] desc-enriched: brand= type=R12AGTR10KW 15A GFCI attrs=1
+[row 607] desc-enriched: brand= type=Receptacle attrs=1
+[row 608] desc-enriched: brand= type=1650472900C 15A 125V attrs=2
+[row 609] desc-enriched: brand= type=1610472000C 15A 125V attrs=2
+[row 610] desc-enriched: brand= type=Receptacle attrs=1
+[row 611] desc-enriched: brand= type=LED Lamp attrs=2
+[row 614] desc-enriched: brand= type=R5GSRA1THD 15A GFCI attrs=1
+[row 615] desc-enriched: brand= type=LED Lamp attrs=2
+[row 617] desc-enriched: brand= type=Switch attrs=1
+[row 618] desc-enriched: brand= type=T50-0SL13000 1G Wallplate attrs=1
+[row 619] desc-enriched: brand= type=R520PJ1300W 1G Wallplate attrs=1
+[row 620] desc-enriched: brand= type=XOU2470BCGS Tall Beverage attrs=1
+[row 621] desc-enriched: brand= type=XOU24BCGSR Beverage Center attrs=1
+[row 628] desc-enriched: brand= type=C7CEBBS2RS3 Cafe Auto attrs=1
+[row 630] desc-enriched: brand= type=C7CESAS2RS3 Caf Espresso attrs=1
+[row 633] desc-enriched: brand= type=Range attrs=1
+[row 634] desc-enriched: brand= type=Microwave attrs=1
+[row 635] desc-enriched: brand= type=Microwave attrs=1
+[row 637] desc-enriched: brand= type=Microwave attrs=1
+[row 638] desc-enriched: brand= type=Microwave attrs=1
+[row 641] desc-enriched: brand= type=Range attrs=1
+[row 642] desc-enriched: brand= type=Range attrs=1
+[row 643] desc-enriched: brand= type=Range attrs=1
+[row 644] desc-enriched: brand= type=Range attrs=1
+[row 647] desc-enriched: brand= type=Range attrs=1
+[row 648] desc-enriched: brand= type=Range attrs=1
+[row 651] desc-enriched: brand= type=Microwave attrs=1
+[row 652] desc-enriched: brand= type=WMMS3330RZ OTR Mocrowave attrs=1
+[row 657] desc-enriched: brand= type=C90AAAS2RS3 Cafe Toast attrs=1
+[row 658] desc-enriched: brand= type=C9TMA2S2PS3 Cafe Toaster attrs=1
+[row 661] desc-enriched: brand= type=Refrigerator attrs=1
+[row 664] desc-enriched: brand= type=Refrigerator attrs=1
+[row 665] desc-enriched: brand= type=Refrigerator attrs=1
+[row 666] desc-enriched: brand= type=Refrigerator attrs=1
+[row 667] desc-enriched: brand= type=Refrigerator attrs=1
+[row 668] desc-enriched: brand= type=Refrigerator attrs=1
+[row 669] desc-enriched: brand= type=Refrigerator attrs=1
+[row 673] desc-enriched: brand= type=K527APBXR Senco 131x3 attrs=3
+[row 675] desc-enriched: brand= type=D10CNK Prebena x3/8 attrs=1
+[row 676] desc-enriched: brand= type=E28CNKHA Prebena x1 attrs=1
+[row 686] desc-enriched: brand=Makita type=XLC10ZW Makita 18V attrs=1
+[row 688] desc-enriched: brand= type=Deck Railing attrs=1
+[row 691] desc-enriched: brand=DEWALT type=DCGG581B Dewalt 20V attrs=1
+[row 692] desc-enriched: brand=DEWALT type=DCGG581GD1 Dewalt 20V attrs=1
+[row 695] desc-enriched: brand= type=x8'-6 DSI SQ attrs=2
+[row 696] desc-enriched: brand= type=x8'-6 DSI SQ attrs=2
+[row 697] desc-enriched: brand= type=x10' DSI SQ attrs=2
+[row 703] desc-enriched: brand= type=TSDKAP218-G2 Edge Safety attrs=1
+[row 704] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 705] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 707] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 708] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 709] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 710] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 711] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 712] desc-enriched: brand= type=Safety Eyewear attrs=1
+[row 717] desc-enriched: brand=Milwaukee type=Glove attrs=1
+[row 718] desc-enriched: brand=Milwaukee type=Glove attrs=1
+[row 719] desc-enriched: brand=Milwaukee type=Glove attrs=1
+[row 720] desc-enriched: brand=Milwaukee type=Glove attrs=1
+[row 738] desc-enriched: brand=Milwaukee type=M200G-21L Milw M12 attrs=1
+[row 739] desc-enriched: brand=Milwaukee type=M200G-21M Milw M12 attrs=1
+[row 740] desc-enriched: brand=Milwaukee type=M200G-21XL Milw M12 attrs=1
+[row 749] desc-enriched: brand=DEWALT type=LED Lamp attrs=1
+[row 751] desc-enriched: brand=DEWALT type=DW08802CG Dewalt Laser attrs=1
+[row 752] desc-enriched: brand=DEWALT type=DW088CG Dewalt Laser attrs=1
+[row 754] desc-enriched: brand=DEWALT type=LED Lamp attrs=1
+[row 755] desc-enriched: brand=DEWALT type=DCLE34031B Dewalt Line attrs=1
+[row 756] desc-enriched: brand=DEWALT type=LED Lamp attrs=1
+[row 760] desc-enriched: brand= type=Mason Line Twist attrs=1
+[row 761] desc-enriched: brand= type=Mason Line Twist attrs=1
+[row 762] desc-enriched: brand= type=Mason Line Brd attrs=1
+[row 763] desc-enriched: brand= type=Mason Line Brd attrs=1
+[row 771] desc-enriched: brand= type=Router attrs=1
+[row 774] desc-enriched: brand= type=Mason Line Brd attrs=1
+[row 781] desc-enriched: brand= type=QB22RU Vessel Carrying attrs=1
+[row 782] desc-enriched: brand= type=QB22KU Vessel Carrying attrs=1
+[row 783] desc-enriched: brand= type=AVM6 EV Mini attrs=1
+[row 784] desc-enriched: brand= type=AVM7 EV Mini attrs=1
+[row 789] desc-enriched: brand=Milwaukee type=Socket attrs=1
+[row 790] desc-enriched: brand=DEWALT type=DWMT45422 Dewalt Drive attrs=1
+[row 791] desc-enriched: brand=DEWALT type=DWMT45424 Dewalt Drive attrs=1
+[row 792] desc-enriched: brand=Milwaukee type=Wrench attrs=1
+[row 793] desc-enriched: brand=Milwaukee type=Wrench attrs=1
+[row 794] desc-enriched: brand=Milwaukee type=Wrench attrs=1
+[row 796] desc-enriched: brand= type=IWHT48441RC Irwin 100ft attrs=1
+[row 797] desc-enriched: brand=Makita type=Lumber attrs=1
+[row 799] desc-enriched: brand=Makita type=Lumber attrs=1
+[row 801] desc-enriched: brand=DEWALT type=DCBL724B Dewalt 20V attrs=1
+[row 804] desc-enriched: brand= type=Sanding Sheet attrs=1
+[row 805] desc-enriched: brand= type=Sanding Sheet attrs=1
+[row 809] desc-enriched: brand=DEWALT type=Hammer attrs=1
+[row 811] desc-enriched: brand=DEWALT type=Power Drill attrs=1
+[row 813] desc-enriched: brand= type=KPTDR050A Kreg 20V attrs=2
+[row 814] desc-enriched: brand=DEWALT type=Drill Bit attrs=1
+[row 821] desc-enriched: brand=DEWALT type=DCN930B Dewalt 20V attrs=1
+[row 822] desc-enriched: brand=DEWALT type=DCN930P1 Dewalt 20V attrs=1
+[row 823] desc-enriched: brand=Makita type=XNB04Z Makita 18V attrs=1
+[row 824] desc-enriched: brand=Makita type=XNB05Z Makita 18V attrs=1
+[row 825] desc-enriched: brand=Makita type=XNB06Z Makita 18V attrs=1
+[row 826] desc-enriched: brand=Makita type=XNB07Z Makita 18V attrs=1
+[row 828] desc-enriched: brand= type=Screw attrs=1
+[row 829] desc-enriched: brand=Makita type=Screw attrs=1
+[row 830] desc-enriched: brand= type=Screw attrs=1
+[row 831] desc-enriched: brand=Milwaukee type=Power Drill attrs=1
+[row 832] desc-enriched: brand= type=Power Drill attrs=1
+[row 833] desc-enriched: brand= type=IBPH250P15T Vessel Torsion attrs=2
+[row 861] desc-enriched: brand=Makita type=XTS02Z Makita 18V attrs=1
+[row 862] desc-enriched: brand=DEWALT type=Power Drill attrs=1
+[row 866] desc-enriched: brand= type=Power Drill attrs=2
+[row 870] desc-enriched: brand=DEWALT type=Power Drill attrs=1
+[row 871] desc-enriched: brand=DEWALT type=Wrench attrs=1
+[row 873] desc-enriched: brand=DEWALT type=Power Drill attrs=1
+[row 874] desc-enriched: brand=Makita type=Power Drill attrs=1
+[row 875] desc-enriched: brand=Makita type=Power Drill attrs=1
+[row 876] desc-enriched: brand=Makita type=Power Drill attrs=1
+[row 877] desc-enriched: brand=DEWALT type=Dewalt DCF510B 20V attrs=1
+[row 881] desc-enriched: brand=Makita type=Sander attrs=1
+[row 882] desc-enriched: brand=DEWALT type=DCM200B Dewalt 1/2in attrs=2
+[row 883] desc-enriched: brand=DEWALT type=Grinder attrs=1
+[row 884] desc-enriched: brand=DEWALT type=Grinder attrs=1
+[row 885] desc-enriched: brand=DEWALT type=Grinder attrs=1
+[row 887] desc-enriched: brand=DEWALT type=Grinder attrs=1
+[row 888] desc-enriched: brand=DEWALT type=Grinder attrs=1
+[row 889] desc-enriched: brand= type=Mafell Carpentry Planing attrs=1
+[row 890] desc-enriched: brand=DEWALT type=Router attrs=1
+[row 895] desc-enriched: brand= type=Sander attrs=2
+[row 896] desc-enriched: brand= type=Pliers attrs=1
+[row 897] desc-enriched: brand= type=Sanding Sheet attrs=2
+[row 898] desc-enriched: brand= type=Festool 80x133 M attrs=1
+[row 899] desc-enriched: brand= type=Festool 80x133 F attrs=1
+[row 900] desc-enriched: brand= type=Festool 80x133 S attrs=1
+[row 901] desc-enriched: brand= type=Festool 3x4 M attrs=1
+[row 902] desc-enriched: brand= type=Festool 3x4 F attrs=1
+[row 903] desc-enriched: brand= type=Festool 3x4 S attrs=1
+[row 904] desc-enriched: brand= type=Festool 3x4 GR attrs=1
+[row 907] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 908] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 910] desc-enriched: brand=Makita type=Saw Blade attrs=1
+[row 911] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 913] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 914] desc-enriched: brand=Diablo type=Saw Blade attrs=2
+[row 915] desc-enriched: brand=Diablo type=Saw Blade attrs=2
+[row 918] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 919] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 920] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 921] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 922] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 923] desc-enriched: brand=Milwaukee type=Milw 13pc Quik-Lock attrs=1
+[row 925] desc-enriched: brand= type=Saw Blade attrs=1
+[row 926] desc-enriched: brand= type=HS Planer Knives attrs=1
+[row 927] desc-enriched: brand=Milwaukee type=Saw Blade attrs=1
+[row 929] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 930] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 931] desc-enriched: brand=Diablo type=Saw Blade attrs=1
+[row 932] desc-enriched: brand= type=JT1-549 JWBS18SFX Bandsaw attrs=2
+[row 934] desc-enriched: brand= type=JWBS-14SFX Bandsaw JTP-714400K attrs=2
+[row 936] desc-enriched: brand=DEWALT type=DCS383B Dewalt 20V attrs=1
+[row 937] desc-enriched: brand=DEWALT type=DCS590B Dewalt 20V attrs=1
+[row 938] desc-enriched: brand= type=KPTCS725A Kreg 20V attrs=2
+[row 939] desc-enriched: brand= type=KPTCS450A Kreg 20V attrs=2
+[row 941] desc-enriched: brand= type=Pliers attrs=2
+[row 942] desc-enriched: brand=DEWALT type=DCS714B Dewalt 20V attrs=1
+[row 943] desc-enriched: brand=DEWALT type=DCS785B Dewalt 20V attrs=1
+[row 944] desc-enriched: brand=Makita type=GSL02M1 Makita Miter attrs=1
+[row 946] desc-enriched: brand=DEWALT type=DCS384B Dewalt 20V attrs=1
+[row 947] desc-enriched: brand=Makita type=XRJ08Z Makita 18V attrs=1
+[row 950] desc-enriched: brand= type=XT524 XT XTENDER attrs=1
+[row 951] desc-enriched: brand= type=XT536 XT XTENDER attrs=1
+[row 952] desc-enriched: brand= type=XT546 XT XTENDER attrs=1
+[row 953] desc-enriched: brand= type=XTP XTENDER PRO attrs=1
+[row 958] desc-enriched: brand= type=TGI2-T36A Table Assembly attrs=1
+[row 959] desc-enriched: brand= type=Track Light attrs=2
+[row 962] desc-enriched: brand=DEWALT type=DCB205C 20V Starter attrs=1
+[row 963] desc-enriched: brand=DEWALT type=Battery Pack attrs=1
+[row 964] desc-enriched: brand=DEWALT type=Battery Pack attrs=1
+[row 965] desc-enriched: brand= type=Battery Pack attrs=1
+[row 966] desc-enriched: brand= type=Battery Pack attrs=2
+[row 967] desc-enriched: brand= type=Battery Pack attrs=2
+[row 968] desc-enriched: brand= type=Battery Pack attrs=2
+[row 971] desc-enriched: brand=DEWALT type=Charger attrs=1
+[row 973] desc-enriched: brand= type=Charger attrs=2
+[row 983] desc-enriched: brand=DEWALT type=Dewalt DCK2101QQ2 20V attrs=2
+[row 985] desc-enriched: brand= type=Dremel Rotary Tool attrs=1
+[row 989] desc-enriched: brand= type=10047VS Oliver 3HP attrs=1
+[row 991] desc-enriched: brand= type=XTP XTENDER PRO attrs=1
+[row 996] desc-enriched: brand= type=Oliver Benchtop Planer attrs=1
+[row 997] desc-enriched: brand= type=Oliver Planer 3HP attrs=1
+[row 998] desc-enriched: brand= type=Oliver Planer 5HP attrs=1
+[row 999] desc-enriched: brand= type=Oliver Benchtop Planer attrs=1
+[output] wrote 1000 records -> data\delivery\statiz_output.csv (all 252 static headers preserved)
